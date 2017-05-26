@@ -1,31 +1,45 @@
-# web chat app
+# angular(2 & 4) webChat App
 
-聊天应用
+基于`Angular 2 & 4`框架与`Material 2`设计开发的聊天应用
 
 
-### 介绍
+[![Dependency Status](https://img.shields.io/david/stbui/angular2-material2-chat-web-app.svg?style=flat-square)](https://david-dm.org/stbui/angular2-material2-chat-web-app)
+[![devDependency Status](https://img.shields.io/david/stbui/angular2-material2-chat-web-app.svg?style=flat-square)](https://david-dm.org/stbui/angular2-material2-chat-web-app?type=dev)
 
-该项目使用 material2 模块进行开发
+
+### 平台环境
+
+[![Angular](https://img.shields.io/badge/Angular%202-2.4.0-brightgreen.svg?style=flat-square)](https://github.com/angular/angular)
+[![Angular-cli](https://img.shields.io/badge/Angular.cli-1.0.0.rc.1-brightgreen.svg?style=square)](https://github.com/angular/angular-cli)
+[![Material 2](https://img.shields.io/badge/Material%202-2.0.0.beta.2-brightgreen.svg?style=square)](https://github.com/angular/material2)
+[![Flex-Layout](https://img.shields.io/badge/Flex.Layout-2.0.0.rc.1-brightgreen.svg?style=square)](https://github.com/angular/flex-layout)
 
 ![demo image](src/assets/img/demo/1.jpg)
 
 
-### 快速使用
+### 使用入门
 
-`npm install -g @angular/cli@latest`
+```
+npm install -g @angular/cli@latest
+git clone https://github.com/stbui/angular2-material2-chat-web-app.git
+```
 
-`ng serve`
+进入项目目录
+```
+npm install
+npm run start
+```
+打开你的浏览器，访问
+```
+http://127.0.0.1:4200
+```
 
 
-### 依赖包
+### 发布
 
-[@angular/material](https://github.com/angular/material2)
-
-[flex-layout](https://github.com/angular/flex-layout)
-
-[angular-in-memory-web-api](https://github.com/angular/in-memory-web-api)
-
-[angular2-perfect-scrollbar](https://www.npmjs.com/package/angular2-perfect-scrollbar)
+```
+ng build --prod --aot --env=prod
+```
 
 
 ### 关联项目
