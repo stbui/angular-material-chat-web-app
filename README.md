@@ -1,7 +1,6 @@
-# angular(2 & 4) webChat App
+# angular4 webChat App
 
-基于`Angular 2 & 4`框架与`Material 2`设计开发的聊天应用
-
+基于`Angular 4`框架与`Material 2`设计开发的聊天应用
 
 [![Dependency Status](https://img.shields.io/david/stbui/angular2-material2-chat-web-app.svg?style=flat-square)](https://david-dm.org/stbui/angular2-material2-chat-web-app)
 [![devDependency Status](https://img.shields.io/david/stbui/angular2-material2-chat-web-app.svg?style=flat-square)](https://david-dm.org/stbui/angular2-material2-chat-web-app?type=dev)
@@ -9,10 +8,10 @@
 
 ### 平台环境
 
-[![Angular](https://img.shields.io/badge/Angular%202-2.4.0-brightgreen.svg?style=flat-square)](https://github.com/angular/angular)
-[![Angular-cli](https://img.shields.io/badge/Angular.cli-1.0.0.rc.1-brightgreen.svg?style=square)](https://github.com/angular/angular-cli)
-[![Material 2](https://img.shields.io/badge/Material%202-2.0.0.beta.2-brightgreen.svg?style=square)](https://github.com/angular/material2)
-[![Flex-Layout](https://img.shields.io/badge/Flex.Layout-2.0.0.rc.1-brightgreen.svg?style=square)](https://github.com/angular/flex-layout)
+[![Angular](https://img.shields.io/badge/Angular%202-4.0.0-brightgreen.svg?style=flat-square)](https://github.com/angular/angular)
+[![Angular-cli](https://img.shields.io/badge/Angular.cli-1.1.2-brightgreen.svg?style=square)](https://github.com/angular/angular-cli)
+[![Material 2](https://img.shields.io/badge/Material%202-2.0.0-beta.6-brightgreen.svg?style=square)](https://github.com/angular/material2)
+[![Flex-Layout](https://img.shields.io/badge/Flex.Layout-2.0.0-beta.8-brightgreen.svg?style=square)](https://github.com/angular/flex-layout)
 
 ![demo image](src/assets/img/demo/1.jpg)
 
@@ -20,8 +19,7 @@
 ### 使用入门
 
 ```
-npm install -g @angular/cli@latest
-git clone https://github.com/stbui/angular2-material2-chat-web-app.git
+npm install -g @angular/cli
 ```
 
 进入项目目录

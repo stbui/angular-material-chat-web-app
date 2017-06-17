@@ -1,5 +1,11 @@
-@import "./assets/vendors/material-design-icons/iconfont/material-icons.css";
-@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+@import '~@angular/material/_theming';
+@include mat-core();
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$candy-app-warn:    mat-palette($mat-red);
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+@include angular-material-theme($candy-app-theme);
+
 @import "styles/_var";
 @import 'styles/_tables';
 @import 'styles/_charts';

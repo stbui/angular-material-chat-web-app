@@ -1,14 +1,14 @@
-import { Angular2Material2ChatWebAppPage } from './app.po';
+import { AngularMaterialChatWebAppPage } from './app.po';
 
-describe('angular2-material2-chat-web-app App', () => {
-  let page: Angular2Material2ChatWebAppPage;
+describe('angular-material-chat-web-app App', () => {
+  let page: AngularMaterialChatWebAppPage;
 
   beforeEach(() => {
-    page = new Angular2Material2ChatWebAppPage();
+    page = new AngularMaterialChatWebAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>web chat app</title>
@@ -8,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    app-root > .background {
+    app-root>.background {
       display: block;
       position: absolute;
       top: 0;
@@ -18,7 +19,7 @@
       background: #2B303B;
     }
 
-    app-root > .background > .wrapper {
+    app-root>.background>.wrapper {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -36,27 +37,30 @@
       border-radius: 2px;
       box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .22);
     }
-    .logo > span {
+
+    .logo>span {
       display: inline-block;
       color: #fff;
       font-size: 56px;
-      animation:rotate 1.5s infinite linear;
+      animation: rotate 1.5s infinite linear;
     }
+
     .info {
-      color: rgba(255,255,255,.4);
+      color: rgba(255, 255, 255, .4);
       text-align: center;
     }
 
-    @keyframes rotate{
-      0%{
-        transform:rotate(0deg);
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
       }
-      100%{
-        transform:rotate(360deg);
+      100% {
+        transform: rotate(360deg);
       }
     }
   </style>
 </head>
+
 <body>
   <app-root>
     <div class="background">
@@ -67,4 +71,5 @@
     </div>
   </app-root>
 </body>
+
 </html>

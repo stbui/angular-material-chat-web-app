@@ -13,7 +13,7 @@ export class ContentComponent implements OnInit {
 
   newMessage;
 
-  constructor(@Inject('ChatService') private service) {
+  constructor( @Inject('ChatService') private service) {
   }
 
   ngOnInit() {

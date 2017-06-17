@@ -1,26 +1,26 @@
-import {Component, OnInit, ViewChild, ViewEncapsulation, Inject, ElementRef} from '@angular/core';
-import {PerfectScrollbarComponent} from "angular2-perfect-scrollbar";
-import {fadeInAnimation} from "../route.animation";
+import { Component, OnInit, ViewChild, ViewEncapsulation, Inject, ElementRef } from '@angular/core';
+import { PerfectScrollbarComponent } from "angular2-perfect-scrollbar";
+import { fadeInAnimation } from "../route.animation";
 
 @Component({
-  selector: 'ms-chat',
+  selector: 'stbui-chat',
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.scss'],
   encapsulation: ViewEncapsulation.None,
   host: {
     "[@fadeInAnimation]": 'true'
   },
-  animations: [ fadeInAnimation ]
+  animations: [fadeInAnimation]
 })
 export class ChatComponent implements OnInit {
 
   chats: any[];
   activeChat: any;
-  messages:any[];
+  messages: any[];
 
   @ViewChild('chatScroll') private chatScroll: PerfectScrollbarComponent;
 
-  constructor(@Inject('ChatService') private service) { }
+  constructor( @Inject('ChatService') private service) { }
 
   ngOnInit() {
     this.getChats();
@@ -32,11 +32,11 @@ export class ChatComponent implements OnInit {
   getChats() {
     this.service
       .getChats()
-      .subscribe(res=>{
-      this.chats = res;
-      this.activeChat = res[0];
-      this.messages = this.activeChat.messages;
-    });
+      .subscribe(res => {
+        this.chats = res;
+        this.activeChat = res[0];
+        this.messages = this.activeChat.messages;
+      });
   }
 
   onActiveChat(chat) {
